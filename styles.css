@@ -28,7 +28,7 @@ box-shadow: 10px 10px 10px black;
     margin-bottom: 10px;
 }
 
-#display {
+.display {
     width: 310px;
     height: 80px;
     padding: 5px;
@@ -37,6 +37,22 @@ box-shadow: 10px 10px 10px black;
     margin-top: 15px;
     background-color: lightgray;
     font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.display .previous-operand{
+    color:rgb(80, 78, 78);
+    font-size: 20px;
+}
+
+.display .current-operand{
+    color:black;
+    font-size: 30px;
 }
 
 .row1 {
@@ -61,19 +77,16 @@ box-shadow: 10px 10px 10px black;
 
 .row5 {
     display: flex;
+    justify-content: flex-end;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-#equals {
-    background-color: rgb(32, 141, 177);
-}
-
-.btn {
+button {
     height: 45px;
     width: 70px;
     border: white solid 2px;
-    font-size: 20px;;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,11 +95,26 @@ box-shadow: 10px 10px 10px black;
     cursor: pointer;
 }
 
-.btn:hover {
+button:hover {
     transform: scale(0.9);
     background-color: rgb(147, 200, 218);
 }
 
 #clear {
     width: 150px;
+}
+
+#equals {
+    width: 150px;
+}
+
+#signature {
+    height: 40px;
+    width: 65px;
+    border: white solid 2px;
+    font-size: 9px;
+    background-color: lightblue;
+    box-shadow: 5px 5px 5px black;
+    display: flex;
+    align-items: center;
 }
